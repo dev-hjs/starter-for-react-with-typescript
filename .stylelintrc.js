@@ -4,10 +4,9 @@ module.exports = {
   // ignoreFiles: ['./src/style.css'],
   overrides: [
     {
-      // CssSyntaxError 해결을 위해 필요
-      files: ['**/*.{jsx,tsx}'],
+      files: ['**/*.{jsx,tsx,ts}'],
       customSyntax: '@stylelint/postcss-css-in-js',
-    },
+    }, // typescript 환경에서 발생하는 CssSyntaxError 해결을 위해 필요
   ],
   rules: {
     'at-rule-empty-line-before': [
@@ -36,8 +35,7 @@ module.exports = {
     'custom-property-empty-line-before': ['always', { except: ['after-custom-property', 'first-nested'] }],
     'declaration-bang-space-after': 'never',
     'declaration-bang-space-before': 'always',
-    // This rule is recommanded because of conflict by semicolon rule between prettier and stylelint
-    'declaration-block-trailing-semicolon': null,
+    'declaration-block-trailing-semicolon': null, // This rule is recommanded because of conflict by semicolon rule between prettier and stylelint
     'declaration-colon-space-after': 'always',
     'declaration-colon-space-before': 'never',
     'declaration-empty-line-before': ['always', { except: ['after-declaration', 'first-nested'] }],

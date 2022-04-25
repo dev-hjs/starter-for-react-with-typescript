@@ -1,9 +1,10 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from '@testing-library/react'
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+import App from './App'
+import React from 'react'
+
+describe('화면 기본 구성', () => {
+  render(<App />)
+  const linkElement = screen.getByText(/Layout/i)
+  expect(linkElement).toBeInTheDocument()
+})
