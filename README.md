@@ -1,6 +1,6 @@
-# React.js with TypeScript boilerplate
+# React.js with TypeScript Starter
 
-리액트 + 타입스크립트 프로젝트를 바로 시작할 수 있는 보일러플레이트예요.  
+리액트 + 타입스크립트 프로젝트를 시작할 때 필요한 스타터예요.  
 create react app으로 react.js 설치 후 react 프로젝트에 필요한 기본적인 패키지를 추가했어요.
 
 개인 프로젝트용으로 만들었기 때문에 각 설정 파일은 개인 취향에 맞췄어요.  
@@ -80,6 +80,7 @@ $ yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
 - [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin) : typescript 관련 린팅 규칙 제공
 - [@typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser) : typescript를 위한 eslint 파서ig-prettier` : prettier와 충돌을 일으키는 eslint 규칙 비활성화
 - [eslint](https://www.npmjs.com/package/eslint) : 코드의 문법을 검사하는 린팅과 코드의 스타일을 잡아주는 포맷팅 기능
+- [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier) : prettier와 충돌이 발생하는 rule을 비활성화
 - [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import) : es2015+ import/export 구문 지원
 - [eslint-plugin-jest](eslint-plugin-jest) : jest 관련 규칙 제공
 - [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) : jsx 내에서 웹 접근성 규칙 관련 피드백 제공
@@ -177,4 +178,4 @@ _괄호 안에 있는 익스텐션 ID로 검색하면 편리하게 찾을 수 �
 
 이곳에서 더 많은 설정과 패키지를 찾아보세요.
 
-[Common sources for boilerplate](https://github.com/biniruu/boilerplate-common-sources)
+[Starter Kit for Settings](https://github.com/biniruu/starter-kit-for-settings)
