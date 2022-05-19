@@ -79,9 +79,13 @@ module.exports = {
     'prettier/prettier': [
       'warn',
       {
-        endOfLine: 'auto',
+        endOfLine: 'auto', // delete 'cr' prettier/prettier 오류를 피하기위해 윈도우 유저에게 필요한 부분
+        parser: 'flow',
       },
-    ], //delete 'cr' prettier/prettier 오류를 피하기위해 윈도우 유저에게 필요한 부분
+      // {
+      //   usePrettierrc: false, // vscode-prettier 익스텐션이 .prettierrc를 읽기 때문에 이 옵션을 true로 설정해도 소용없음
+      // },
+    ],
     quotes: ['warn', 'single', { allowTemplateLiterals: true }],
     // 'react/destructuring-assignment': 'warn', // state, prop 등에 구조분해 할당 적용
     'react/jsx-curly-brace-presence': 'warn', // jsx 내 불필요한 중괄호 금지

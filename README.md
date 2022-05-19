@@ -23,6 +23,23 @@ create react app으로 react.js 설치 후 react 프로젝트에 필요한 기�
 $ yarn create react-app <my-app-name> --template typescript
 ```
 
+이미 만든 폴더에 설치한다면 `yarn create react-app ./ --template typescript`를 입력하면 돼요.
+
+<br>
+
+## Package.json 수정 ✏️
+
+CRA로 리액트 설치 후 아래 설정을 삭제해주세요.
+이 설정은 .eslintrc.js로 옮겨두었어요.
+
+```json
+{
+  "eslintConfig": {
+    "extends": ["react-app", "react-app/jest"]
+  }
+}
+```
+
 <br>
 
 ## 패키지 설치 📦
@@ -115,7 +132,7 @@ $ yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
 
 ## 설정 파일 💾
 
-제 취향이 듬뿍 담긴 파일이니 각자 취향에 맞춰 수정 후 사용하세요👻
+제 취향이 듬뿍 담긴 파일이니 각자 취향에 맞춰 수정 후 사용하세요.👻
 
 ### Eslint & Perttier
 
